@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Graphics — Hillside Visuals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<nav class="hv-nav">
+  <div class="hv-nav__inner">
+    <a class="hv-nav__brand" href="index.html#top" aria-label="Hillside Visuals home">
+      <img src="assets/img/logo.png" alt="Hillside Visuals">
+    </a>
+    <div class="hv-nav__links">
+      <div class="hv-drop">
+      <a class="hv-nav__link" href="index.html#work">Work</a>
+      <div class="hv-drop__menu">
+        <a href="index.html#work">All Work</a>
+        <a href="photos.html">Photos</a>
+        <a href="videos.html">Videos</a>
+        <a href="flyers.html">Flyers</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="sites.html">Sites</a>
+        <a href="promotions.html">Promotions</a>
+        <a href="events.html">Events</a>
+      </div>
+    </div>
+      <a class="hv-nav__link" href="index.html#services">Services</a>
+      <a class="hv-nav__link" href="index.html#about">About</a>
+      <a class="hv-nav__cta" href="index.html#book">Book</a>
+    </div>
+  </div>
+</nav>
+<header class="hv-pagehero">
+  <p class="hv-eyebrow">Work</p>
+  <h1 class="hv-display hv-pagehero__title">Graphics</h1>
+  <p class="hv-sec__lead">Marks, covers, and the visuals in between.</p>
+</header>
+<div class="hv-pagegrid">
+<div class="hv-work__empty show" style="margin-top:48px">More graphic design work is on the way.</div>
+</div>
+<div class="hv-back"><a class="hv-textlink" href="index.html#work">All work</a></div>
+<section class="hv-sec hv-book" id="book">
+  <div class="hv-book__grid">
+    <div class="rv">
+      <p class="hv-eyebrow" style="color:rgba(255,255,255,.65)">Start a project</p>
+      <h2 class="hv-display hv-book__title">Book<br>a session</h2>
+      <p class="hv-book__lead">Tell us what you&rsquo;re dreaming up. We&rsquo;ll take it from there.</p>
+      <div class="hv-book__contact">
+        <a href="tel:+17028489250">702-848-9250</a>
+        <a href="mailto:hillsidevisuals@gmail.com">hillsidevisuals@gmail.com</a>
+      </div>
+    </div>
+    <form class="rv" id="bookform">
+      <div class="hv-form__row">
+        <div class="hv-field"><label for="bf-name">Name</label><input id="bf-name" name="name" type="text" placeholder="Your name" required></div>
+        <div class="hv-field"><label for="bf-email">Email</label><input id="bf-email" name="email" type="email" placeholder="you@email.com" required></div>
+      </div>
+      <div class="hv-form__row">
+        <div class="hv-field"><label for="bf-service">Service</label>
+          <select id="bf-service" name="service">
+            <option>Portraits</option><option>Professional Headshots</option><option>Videography</option>
+            <option>Flyers &amp; Graphic Design</option><option>Promotions</option><option>Events</option><option>Websites</option>
+          </select>
+        </div>
+        <div class="hv-field"><label for="bf-date">Date</label><input id="bf-date" name="date" type="date"></div>
+      </div>
+      <div class="hv-field"><label for="bf-notes">The vision</label><textarea id="bf-notes" name="notes" rows="3" placeholder="A few words about the shoot"></textarea></div>
+      <button class="hv-btn hv-btn--light" type="submit">Send the brief</button>
+    </form>
+  </div>
+</section>
+<footer class="hv-footer">
+  <div class="hv-footer__top">
+    <div>
+      <img class="hv-footer__mark" src="assets/img/logo.png"" alt="Hillside Visuals">
+      <p class="hv-footer__tag">Where your visions are made a reality.</p>
+    </div>
+    <div class="hv-footer__cols">
+      <div class="hv-footer__col">
+        <p class="hv-footer__h">Studio</p>
+        <a href="index.html#work">Work</a><a href="index.html#services">Services</a><a href="index.html#about">About</a><a href="index.html#book">Book</a>
+      </div>
+      <div class="hv-footer__col">
+        <p class="hv-footer__h">Contact</p>
+        <a href="tel:+17028489250">702-848-9250</a>
+        <a href="mailto:hillsidevisuals@gmail.com">hillsidevisuals@gmail.com</a>
+      </div>
+      <div class="hv-footer__col">
+        <p class="hv-footer__h">Follow</p>
+        <a href="https://www.instagram.com/hillsidevisuals" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@hillside.visuals" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </div>
+  <div class="hv-footer__bottom">
+    <span>&copy; 2026 Hillside Visuals</span>
+    <span>Las Vegas, NV</span>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
