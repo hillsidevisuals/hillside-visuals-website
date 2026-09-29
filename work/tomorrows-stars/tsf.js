@@ -26,10 +26,10 @@
   var io=new IntersectionObserver(function(es){
     es.forEach(function(e){
       if(!e.isIntersecting)return;io.unobserve(e.target);
-      var el=e.target,end=parseFloat(el.dataset.count),pre=el.dataset.pre||'',suf=el.dataset.suf||'';
+      var el=e.target,end=parseFloat(el.dataset.count),pre=el.dataset.pre||'',suf=el.dataset.suf||'',orig=el.textContent;
       var t0=null,dur=1400;
       function tick(t){if(!t0)t0=t;var p=Math.min((t-t0)/dur,1),v=end*(1-Math.pow(1-p,3));
-        el.textContent=pre+Math.round(v).toLocaleString()+suf;if(p<1)requestAnimationFrame(tick);}
+        el.textContent=pre+Math.round(v).toLocaleString()+suf;if(p<1)requestAnimationFrame(tick);else el.textContent=orig;}
       requestAnimationFrame(tick);
     });
   },{threshold:.4});
