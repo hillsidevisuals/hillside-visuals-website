@@ -33,6 +33,9 @@ a{color:inherit}
 .hv-btn--light:hover{background:#e9e9e4;border-color:#e9e9e4}
 .hv-btn--ghost-light{background:transparent;border-color:rgba(255,255,255,.65);color:#fff}
 .hv-btn--ghost-light:hover{background:#fff;color:var(--ink);border-color:#fff}
+.hv-btn--lg{padding:22px 64px;font-size:1.15rem}
+.hv-book__cta{text-align:center;padding:48px 24px;border:1px solid rgba(255,255,255,.18);border-radius:20px;background:rgba(255,255,255,.04)}
+.hv-book__note{color:#B9BFC1;margin:22px 0 0;line-height:1.6}
 .hv-textlink{font-size:.95rem;color:var(--blue-ink);text-decoration:none;border-bottom:1px solid var(--blue-ink);padding-bottom:2px}
 
 /* ---------- nav ---------- */
