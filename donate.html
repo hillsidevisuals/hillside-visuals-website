@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make a Donation &mdash; Tomorrow's Stars Foundation</title>
+<meta name="description" content="Donate to Tomorrow's Stars Foundation: fund free youth programming and scholarships.">
+<link rel="icon" href="img/tsf-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tsf-style.css?v=20260929f">
+</head>
+<body>
+<header class="tsf-head" id="tsfHead">
+  <div class="tsf-head__in">
+    <a href="index.html" aria-label="Tomorrow's Stars Foundation home"><img class="logo" src="img/tsf-horizontal-gold.png" alt="Tomorrow's Stars Foundation"></a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" id="burger"><span></span><span></span><span></span></button>
+    <nav class="tsf-nav" id="tsfNav" aria-label="Primary">
+      <a class="nl" href="index.html">Home</a>
+      <a class="nl" href="programs.html">Programs</a>
+      <div class="nl-drop">
+        <a class="nl" href="about.html" aria-haspopup="true">About <svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <div class="nl-menu">
+          <a href="about.html#why">Our Why</a>
+          <a href="about.html#numbers">By The Numbers</a>
+          <a href="about.html#board">Board of Directors</a>
+          <a href="about.html#partners">Our Partners</a>
+          <a href="about.html#get-involved">Get Involved</a>
+        </div>
+      </div>
+      <div class="nl-drop">
+        <a class="nl" href="past-initiatives.html" aria-haspopup="true">Past Initiatives <svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <div class="nl-menu">
+          <a href="adopt-a-school.html">Adopt-A-School</a>
+          <a href="summer-league-jr-nba.html">Summer League Jr. NBA</a>
+          <a href="court-science-classroom.html">Court Science Classroom</a>
+          <a href="on-air-classroom.html">On-Air Classroom</a>
+          <a href="sports-science-classroom.html">Sports Science Classroom</a>
+          <a href="stars-of-tomorrow-scholarships.html">Stars of Tomorrow Scholarship</a>
+        </div>
+      </div>
+      <a class="nl" href="updates.html">Updates</a>
+      <a class="nl" href="contact.html">Contact</a>
+      <a class="btn" href="donate.html">Make a Donation</a>
+      <button class="hsearch" aria-label="Search" aria-expanded="false" id="hsearchBtn"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 14l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </nav>
+  </div>
+<div class="hsearch-panel" id="hsearchPanel" hidden>
+    <form id="hsearchForm"><input type="search" placeholder="Search programs, updates, initiatives&hellip;" aria-label="Search"><button class="btn" type="submit">Search</button></form>
+    <p class="demo-note">Demo recreation &mdash; search runs on the live site at tomorrowsstars.org.</p>
+  </div>
+</header>
+<div class="tsf-banner" style="background-image:url(img/about-siteheaders-TSF.jpg)">
+  <div class="wrap">
+    <div class="eyebrow rv">Make A Donation</div>
+    <h1 class="h-display rv">Support the <span class="gold-grad">Stars of Tomorrow</span></h1>
+    <p class="lead rv" style="margin-top:18px">Your donation will help support, empower and enlighten our youth as well as help fund programs around mentoring, technology, self-esteem and sports.</p>
+  </div>
+</div>
+
+<section class="tsf-sec tsf-sec--light">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow rv">Give Today</div>
+    <h2 class="h-display rv">Every gift goes to work</h2>
+    <p class="lead rv" style="margin-left:auto;margin-right:auto">100% of your gift funds free programming, mentorship, and scholarships across all six areas of focus. Tomorrow&rsquo;s Stars Foundation is a registered 501(c)(3) non-profit, so your donation is tax-deductible.</p>
+    <form class="give-card rv" id="giveForm" style="text-align:left" onsubmit="return false;">
+      <p class="body-p">Your tax deductible donations help support all of Tomorrow&rsquo;s Stars Programs and Scholarship Funds.</p>
+      <p class="body-p">We are continually raising money to help empower our youth and build the type of leaders we so desperately need in our communities.&nbsp; We thank your for your support, contact us for more information.</p>
+      <p class="body-p" style="font-weight:700">Please select a donation level below:</p>
+      <h4>$ Donation Amount:</h4>
+      <div class="amt-row" id="amtRow">
+        <button type="button" class="amt sel" data-amt="10">$10<small>One-time</small></button>
+        <button type="button" class="amt" data-amt="25">$25<small>One-time</small></button>
+        <button type="button" class="amt" data-amt="50">$50<small>One-time</small></button>
+        <button type="button" class="amt" data-amt="100">$100<small>One-time</small></button>
+        <label class="amt-custom"><span>$</span><input type="number" min="1" step="any" id="customAmt" placeholder="Custom Amount" aria-label="Custom amount"></label>
+      </div>
+      <h4>Dedicate this Donation</h4>
+      <div class="radio-row" id="dedicateRow">
+        <label><input type="radio" name="dedicate" value="yes"> Yes, please</label>
+        <label><input type="radio" name="dedicate" value="no" checked> No, thank you</label>
+      </div>
+      <div id="honoreeBox" hidden>
+        <h4>Honoree Details</h4>
+        <div class="give-grid">
+          <div class="field"><label for="ded-type">Dedication Type</label><select id="ded-type"><option>On behalf of</option><option>In honor of</option><option>In memory of</option></select></div>
+          <div class="field"><label for="hon-name">Honoree Name</label><input id="hon-name" placeholder="Honoree name"></div>
+        </div>
+      </div>
+      <h4>Personal Info</h4>
+      <div class="give-grid">
+        <div class="field"><label for="g-first">First Name *</label><input id="g-first" required placeholder="First name"></div>
+        <div class="field"><label for="g-last">Last Name</label><input id="g-last" placeholder="Last name"></div>
+        <div class="field full"><label for="g-email">Email Address *</label><input id="g-email" type="email" required placeholder="you@example.com"></div>
+        <div class="field full"><label for="g-comment">Comment</label><textarea id="g-comment" rows="3" placeholder="Leave a note with your gift&hellip;"></textarea></div>
+      </div>
+      <div class="give-total"><b>Donation Total:</b><span class="t" id="giveTotal">$10.00</span></div>
+      <p class="give-fee" id="giveFee">Your $10.00 donation plus $0.00 to help cover fees.</p>
+      <label style="display:flex;align-items:center;gap:10px;margin-top:12px;font-weight:600;cursor:pointer"><input type="checkbox" id="coverFees" style="accent-color:var(--gold-deep);width:18px;height:18px"> I&rsquo;d like to add a little extra to help cover processing fees</label>
+      <div class="btn-row" style="margin-top:26px"><button class="btn" type="submit" id="giveSubmit" style="flex:1;min-width:220px">Donate Now</button></div>
+      <p class="demo-note" style="color:var(--blk-58)">Demo recreation &mdash; this form does not transmit anything or process a payment. Donations process on the live site at tomorrowsstars.org.</p>
+    </form>
+  </div>
+</section>
+
+<section class="tsf-sec" style="background:#000">
+  <div class="wrap">
+    <div class="eyebrow rv">How You Can Support</div>
+    <div class="rule rv"></div>
+    <h2 class="h-display rv">More ways to back our youth</h2>
+    <div class="pillars" style="margin-top:44px">
+      <div class="pillar rv">
+        <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0112 5a5 5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+        <h3>Donate</h3><p>Tax-deductible gifts that fund scholarships and youth programming year-round.</p>
+      </div>
+      <div class="pillar rv rv-d1">
+        <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg></div>
+        <h3>Sponsor an Event</h3><p>Put your brand behind a clinic, theme night, or Summer League activation.</p>
+      </div>
+      <div class="pillar rv rv-d2">
+        <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/></svg></div>
+        <h3>Become a Partner</h3><p>Join 50+ organizations delivering opportunity across Southern Nevada.</p>
+      </div>
+    </div>
+    <div class="btn-row rv"><a class="btn btn--ghost" href="contact.html">Talk to our team</a></div>
+  </div>
+</section>
+<section class="tsf-sec tsf-sec--ink">
+  <div class="wrap">
+    <div class="eyebrow rv">Your Impact</div>
+    <div class="rule rv"></div>
+    <h2 class="h-display rv">What your gift builds</h2>
+    <div class="stats">
+      <div class="stat rv"><span class="stat__n" data-count="50" data-suffix="+">50+</span><span class="stat__l">Community Partners</span></div>
+      <div class="stat rv rv-d1"><span class="stat__n" data-count="1100" data-suffix="+">1,100+</span><span class="stat__l">Youth Impacted</span></div>
+      <div class="stat rv rv-d2"><span class="stat__n" data-count="4000" data-prefix="$" data-ksuffix="K+">$4K+</span><span class="stat__l">Scholarships Awarded</span></div>
+      <div class="stat rv rv-d3"><span class="stat__n" data-count="6">6</span><span class="stat__l">Areas of Focus</span></div>
+    </div>
+  </div>
+</section>
+<section class="tsf-band">
+  <div class="wrap">
+    <h2 class="h-display rv">See where it goes</h2>
+    <p class="lead rv">Three flagship programs are running right now across technology, medicine, and the arts.</p>
+    <div class="btn-row btn-row--center rv">
+      <a class="btn btn--dark" href="programs.html">Our Programs</a>
+      <a class="btn btn--inkline" href="updates.html">Recent Work</a>
+    </div>
+  </div>
+</section>
+<footer class="tsf-foot">
+  <div class="wrap">
+    <div class="tsf-foot__grid">
+      <div class="tsf-foot__brand">
+        <img src="img/tsf-horizontal-gold.png" alt="Tomorrow's Stars Foundation" style="height:56px">
+        <p>Free youth programming across education, technology, athletics, medicine, arts, and engineering.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Recent Work</h4>
+        <ul>
+          <li><a href="2026-so-far-recap.html">2026 So Far: A Recap of the Year in Motion</a></li>
+          <li><a href="2025-community-impact-recap.html">2025 Community Impact Recap</a></li>
+          <li><a href="carole-adams-hattar-citizen-of-the-year.html">Carole Adams Hattar Named Citizen of the Year</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Social</h4>
+        <div class="socials">
+          <a href="https://www.facebook.com/TomorrowsStarsFoundation/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.6-.1-1.4-.2-2.2-.2-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.5v7h3z"/></svg></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 4h2.7l-6 6.8L21.5 20h-5.6l-4.3-5.6L6.6 20H3.9l6.4-7.3L3.5 4H9l3.9 5.1L17.8 4zm-1 14.3h1.5L8.1 5.6H6.5l10.3 12.7z"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+        <form class="foot-search" id="footSearch"><input type="search" placeholder="Search&hellip;" aria-label="Search"><button type="submit">GO</button></form>
+        <p class="demo-note">Demo recreation &mdash; search runs on the live site.</p>
+      </div>
+    </div>
+  </div>
+  <div class="tsf-foot__base">
+    <span>Copyright 2026 Tomorrow's Stars Foundation | Tomorrow's Stars Foundation is a nonprofit 501(c)(3) public charity (tax ID# 82-5015549) | All Rights Reserved |</span>
+  </div>
+  <p class="portfolio-note">Portfolio recreation by <a href="https://hillsidevisuals.github.io/hillside-visuals-website/">Hillside Visuals</a> of the live site at <a href="https://tomorrowsstars.org/" target="_blank" rel="noopener">tomorrowsstars.org</a>. Forms and donation controls are demonstrational and transmit nothing.</p>
+</footer>
+<button class="go-top" id="goTop" aria-label="Go to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="tsf.js?v=20260929f"></script>
+</body>
+</html>
