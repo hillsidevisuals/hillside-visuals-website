@@ -21,15 +21,6 @@
     els.forEach(function(el){el.classList.add('on');});
   }
 })();
-// Booking form: guarded so pages without the form never break other scripts.
-(function(){
-  var f=document.getElementById('bookform');
-  if(!f) return;
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    this.innerHTML='<p class="hv-display" style="color:#fff;font-size:2rem">Brief received.</p><p style="color:#B9BFC1;margin-top:14px;line-height:1.6">We&rsquo;ll be in touch shortly.</p>';
-  });
-})();
 
 const hvPills=document.querySelectorAll('.hv-pill');if(hvPills.length){const hvItems=document.querySelectorAll('.hv-work__item'),hvEmpty=document.getElementById('workEmpty'),hvEmptyCat=document.getElementById('workEmptyCat');
 const hvNames={photos:'photography',videos:'videography',flyers:'flyer',graphics:'graphic design',sites:'website',promotions:'promotion',events:'event',sports:'sports',portraits:'portrait',weddings:'wedding',graduations:'graduation',dance:'dance',cinematic:'cinematic'};
