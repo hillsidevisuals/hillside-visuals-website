@@ -38,20 +38,22 @@ a{color:var(--tsf-gold)}
 .nl-drop:hover .nl-menu,.nl-drop:focus-within .nl-menu{opacity:1;visibility:visible;transform:translate(-50%,0)}
 .nl-menu a{display:block;padding:11px 14px;font-family:var(--tsf-font-display);font-weight:600;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tsf-fg);text-decoration:none;border-radius:8px}
 .nl-menu a:hover{background:rgba(216,178,74,.12);color:var(--tsf-gold)}
-@media(max-width:900px){.nl-menu{position:static;transform:none;opacity:1;visibility:visible;display:block;background:transparent;border:0;padding:0 0 0 14px}.nl-menu a{padding:9px 14px}}
+@media(max-width:720px){.nl-menu{position:static;transform:none;opacity:1;visibility:visible;display:block;background:transparent;border:0;padding:0 0 0 14px}.nl-menu a{padding:9px 14px}}
 .btn:active{transform:scale(.97)}
 .btn--dark{background:var(--tsf-gold-ink);color:var(--tsf-gold)}
 
 /* Nav */
-.tsf-nav{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(0,0,0,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--tsf-hairline)}
+.tsf-head{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(0,0,0,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--tsf-hairline)}
 .tsf-head__in{max-width:1280px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .tsf-brand img{height:44px;width:auto}
-.tsf-links{display:flex;gap:30px;align-items:center}
-.tsf-links a{font-family:var(--tsf-font-display);font-weight:600;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--tsf-fg);text-decoration:none;position:relative;padding:6px 0}
-.tsf-links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--tsf-gold);transition:width .2s ease-out}
-.tsf-links a:hover{color:var(--tsf-gold)}
-.tsf-links a:hover::after{width:100%}
-.tsf-links .btn{padding:12px 26px}
+.tsf-nav{display:flex;gap:30px;align-items:center}
+.tsf-nav .nl{font-family:var(--tsf-font-display);font-weight:600;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--tsf-fg);text-decoration:none;position:relative;padding:6px 0}
+.tsf-nav .nl::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--tsf-gold);transition:width .2s ease-out}
+.tsf-nav .nl:hover{color:var(--tsf-gold)}
+.tsf-nav .nl:hover::after{width:100%}
+.tsf-nav .nl.on{color:var(--tsf-gold)}
+.tsf-nav .nl.on::after{width:100%}
+.tsf-nav .btn{padding:12px 26px}
 .tsf-links .btn::after{display:none}
 .burger{display:none;background:none;border:0;cursor:pointer;padding:10px}
 .burger span{display:block;width:26px;height:2px;background:#fff;margin:6px 0;transition:transform .2s ease-out,opacity .2s}
@@ -236,15 +238,16 @@ a{color:var(--tsf-gold)}
   .tiers{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:720px){
-  .tsf-links{display:none}
+  .tsf-nav{display:none}
   .burger{display:block}
   .burger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
   .burger.open span:nth-child(2){opacity:0}
   .burger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-  .bm{display:block;position:fixed;top:0;right:-100%;width:min(340px,84vw);height:100dvh;background:#050505;border-left:1px solid var(--tsf-hairline);z-index:70;transition:right .25s ease-out;padding:96px 34px}
-  .bm.open{right:0}
-  .bm a{display:block;font-family:var(--tsf-font-display);font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#fff;text-decoration:none;padding:14px 0;border-bottom:1px solid var(--tsf-hairline);font-size:.95rem}
-  .bm a:hover{color:var(--tsf-gold)}
+  .tsf-nav.open{display:flex;position:fixed;top:0;right:0;width:min(340px,84vw);height:100dvh;background:#050505;border-left:1px solid var(--tsf-hairline);z-index:70;flex-direction:column;align-items:stretch;gap:0;padding:96px 34px;overflow-y:auto}
+  .tsf-nav.open a.nl{display:block;font-family:var(--tsf-font-display);font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#fff;text-decoration:none;padding:14px 0;border-bottom:1px solid var(--tsf-hairline);font-size:.95rem}
+  .tsf-nav.open a.nl::after{display:none}
+  .tsf-nav.open a.nl:hover{color:var(--tsf-gold)}
+  .tsf-nav.open .btn{margin-top:20px;text-align:center}
   .sec{padding:64px 0}
   .pillars-grid,.prog-grid,.upd-grid,.comm-grid,.board-grid,.team-grid,.donate-methods,.paper .why__grid,.tsf-foot__grid{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
