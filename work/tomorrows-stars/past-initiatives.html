@@ -8,18 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="tsf-style.css">
+<link rel="stylesheet" href="tsf-style.css?v=20260929d">
 </head>
 <body>
 <header class="tsf-head">
   <div class="tsf-head__in">
-    <a href="index.html" aria-label="Tomorrow's Stars Foundation home"><img class="logo" src="img/tsf-horizontal-white.png" alt="Tomorrow's Stars Foundation"></a>
+    <a href="index.html" aria-label="Tomorrow's Stars Foundation home"><img class="logo" src="img/tsf-horizontal-gold.png" alt="Tomorrow's Stars Foundation"></a>
     <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="tsf-nav" id="tsfNav">
       <a class="nl" href="index.html">Home</a>
       <a class="nl" href="programs.html">Programs</a>
       <div class="nl-drop">
-        <a class="nl" href="about.html">About</a>
+        <a class="nl" href="about.html">About <svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
         <div class="nl-menu">
           <a href="about.html#why">Our Why</a>
           <a href="about.html#board">Board of Directors</a>
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="nl-drop">
-        <a class="nl on" href="past-initiatives.html">Past Initiatives</a>
+        <a class="nl on" href="past-initiatives.html">Past Initiatives <svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
         <div class="nl-menu">
           <a href="adopt-a-school.html">Adopt-A-School</a>
           <a href="summer-league-jr-nba.html">Summer League Jr. NBA</a>
@@ -41,7 +41,12 @@
       <a class="nl" href="updates.html">Updates</a>
       <a class="nl" href="contact.html">Contact</a>
       <a class="btn" href="donate.html">Make a Donation</a>
+      <button class="hsearch" aria-label="Search" aria-expanded="false"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 14l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
     </nav>
+  </div>
+<div class="hsearch-panel" id="hsearchPanel" hidden>
+    <form id="hsearchForm"><input type="search" placeholder="Search programs, updates, initiatives&hellip;" aria-label="Search"><button class="btn" type="submit">Search</button></form>
+    <p class="demo-note">Demo recreation &mdash; search runs on the live site at tomorrowsstars.org.</p>
   </div>
 </header>
 <section class="stats">
