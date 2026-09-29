@@ -21,8 +21,23 @@
       <a class="hv-nav__link" href="index.html#work">Work</a>
       <div class="hv-drop__menu">
         <a href="index.html#work">All Work</a>
-        <a href="photos.html">Photos</a>
-        <a href="videos.html">Videos</a>
+        <div class="hv-sub">
+          <a href="photos.html">Photos <span class="hv-sub__arrow">›</span></a>
+          <div class="hv-sub__menu">
+            <a href="photos.html#sports">Sports</a>
+            <a href="photos.html#portraits">Portraits</a>
+            <a href="photos.html#weddings">Weddings</a>
+            <a href="photos.html#graduations">Graduations</a>
+          </div>
+        </div>
+        <div class="hv-sub">
+          <a href="videos.html">Videos <span class="hv-sub__arrow">›</span></a>
+          <div class="hv-sub__menu">
+            <a href="videos.html#dance">Dance</a>
+            <a href="videos.html#sports">Sports</a>
+            <a href="videos.html#cinematic">Cinematic</a>
+          </div>
+        </div>
         <a href="flyers.html">Flyers</a>
         <a href="graphics.html">Graphics</a>
         <a href="sites.html">Sites</a>
@@ -39,8 +54,23 @@
     </button>
     <div class="hv-mobilemenu">
         <a href="index.html#work">All Work</a>
-        <a href="photos.html">Photos</a>
-        <a href="videos.html">Videos</a>
+        <div class="hv-msub">
+          <button type="button" class="hv-msub__toggle" aria-expanded="false">Photos <span>›</span></button>
+          <div class="hv-msub__links">
+          <a href="photos.html#sports">Sports</a>
+          <a href="photos.html#portraits">Portraits</a>
+          <a href="photos.html#weddings">Weddings</a>
+          <a href="photos.html#graduations">Graduations</a>
+          </div>
+        </div>
+        <div class="hv-msub">
+          <button type="button" class="hv-msub__toggle" aria-expanded="false">Videos <span>›</span></button>
+          <div class="hv-msub__links">
+          <a href="videos.html#dance">Dance</a>
+          <a href="videos.html#sports">Sports</a>
+          <a href="videos.html#cinematic">Cinematic</a>
+          </div>
+        </div>
         <a href="flyers.html">Flyers</a>
         <a href="graphics.html">Graphics</a>
         <a href="sites.html">Sites</a>
@@ -64,6 +94,7 @@
 <button class="hv-pill" data-filter="sports" type="button">Sports</button>
 <button class="hv-pill" data-filter="portraits" type="button">Portraits</button>
 <button class="hv-pill" data-filter="weddings" type="button">Weddings</button>
+<button class="hv-pill" data-filter="graduations" type="button">Graduations</button>
 <button class="hv-pill" data-filter="events" type="button">Events</button>
 </div>
 <div class="hv-work__empty" id="workEmpty">More <span id="workEmptyCat"></span> work is on the way.</div>
