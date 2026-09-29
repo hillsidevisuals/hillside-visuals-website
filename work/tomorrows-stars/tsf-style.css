@@ -54,7 +54,6 @@ a{color:var(--tsf-gold)}
 .tsf-nav .nl.on{color:var(--tsf-gold)}
 .tsf-nav .nl.on::after{width:100%}
 .tsf-nav .btn{padding:12px 26px}
-.tsf-links .btn::after{display:none}
 .burger{display:none;background:none;border:0;cursor:pointer;padding:10px}
 .burger span{display:block;width:26px;height:2px;background:#fff;margin:6px 0;transition:transform .2s ease-out,opacity .2s}
 .bm{background:var(--tsf-surface);border:1px solid var(--tsf-hairline);border-radius:12px;overflow:hidden;transition:transform .2s ease-out,border-color .2s}
