@@ -16,6 +16,9 @@
   /* Gold-on-band text color (board: "Gold Band · text #1B1303") */
   --tsf-gold-ink: #1B1303; /* dark brown-black for text over gold    */
 
+  /* Deep gold — legible gold accents on light/paper backgrounds */
+  --tsf-gold-deep: #9A7A24;
+
   /* ---------- METALLIC GRADIENTS (120°) ---------- */
   --tsf-grad-gold: linear-gradient(120deg,
       #9C6E1B 0%, #D4A93B 26%, #F7EBB0 52%, #E3C45C 70%, #A8781F 100%); /* @kind color */
