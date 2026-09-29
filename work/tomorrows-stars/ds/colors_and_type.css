@@ -1,0 +1,151 @@
+/* ============================================================
+   TOMORROW'S STARS FOUNDATION — Colors & Type
+   Source of truth: Brand System Board ("Social Toolkit Foundations")
+   Load Montserrat, Barlow Condensed & Barlow from Google Fonts:
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+   ============================================================ */
+
+:root {
+  /* ---------- CORE PALETTE ---------- */
+  --tsf-black:   #000000;  /* Pure Black — primary canvas            */
+  --tsf-ink:     #0A0A0B;  /* Ink — near-black surfaces / cards      */
+  --tsf-gold:    #D8B24A;  /* Gold — primary accent, CTAs, headlines */
+  --tsf-silver:  #B9BBBE;  /* Silver — secondary metallic accent     */
+  --tsf-paper:   #F6F4EE;  /* Paper — warm off-white, light mode bg  */
+
+  /* Gold-on-band text color (board: "Gold Band · text #1B1303") */
+  --tsf-gold-ink: #1B1303; /* dark brown-black for text over gold    */
+
+  /* ---------- METALLIC GRADIENTS (120°) ---------- */
+  --tsf-grad-gold: linear-gradient(120deg,
+      #9C6E1B 0%, #D4A93B 26%, #F7EBB0 52%, #E3C45C 70%, #A8781F 100%); /* @kind color */
+  --tsf-grad-silver: linear-gradient(120deg,
+      #5A5C5F 0%, #C9CBCE 40%, #F2F3F4 55%, #9A9C9F 74%, #46484B 100%); /* @kind color */
+
+  /* ---------- SEMANTIC SURFACES ---------- */
+  --tsf-bg:          var(--tsf-black);   /* default dark canvas        */
+  --tsf-surface:     var(--tsf-ink);     /* raised card on dark        */
+  --tsf-surface-2:   #16161A;            /* second elevation on dark   */
+  --tsf-bg-light:    var(--tsf-paper);   /* editorial / light canvas   */
+  --tsf-surface-light: #FFFFFF;          /* card on paper              */
+
+  /* ---------- SEMANTIC FOREGROUND ---------- */
+  --tsf-fg:          #FFFFFF;            /* primary text on dark        */
+  --tsf-fg-2:        rgba(255,255,255,.66); /* secondary text on dark  */
+  --tsf-fg-3:        rgba(255,255,255,.42); /* tertiary / captions     */
+  --tsf-fg-on-light:    #0A0A0B;         /* primary text on paper       */
+  --tsf-fg-on-light-2:  #55555B;         /* secondary text on paper     */
+
+  /* ---------- LINES & BORDERS ---------- */
+  --tsf-hairline:        rgba(255,255,255,.12);  /* divider on dark     */
+  --tsf-hairline-light:  rgba(10,10,11,.12);     /* divider on paper    */
+  --tsf-gold-line:       var(--tsf-gold);        /* accent rule         */
+
+  /* ---------- TYPE FAMILIES ---------- */
+  --tsf-font-display: "Montserrat", "Helvetica Neue", Arial, sans-serif; /* headlines 700/800/900 */
+  --tsf-font-body:    "Barlow", "Helvetica Neue", Arial, sans-serif;     /* supporting copy        */
+  --tsf-font-numeral: "Barlow Condensed", "Barlow", sans-serif;          /* impact numerals/dates  */
+
+  /* ---------- TYPE SCALE (px) ---------- */
+  --tsf-fs-display:  clamp(48px, 7vw, 96px); /* @kind font */
+  --tsf-fs-h1:       clamp(36px, 5vw, 64px); /* @kind font */
+  --tsf-fs-h2:       clamp(28px, 3.5vw, 44px); /* @kind font */
+  --tsf-fs-h3:       24px;
+  --tsf-fs-numeral:  clamp(40px, 6vw, 88px); /* @kind font */
+  --tsf-fs-body:     17px;
+  --tsf-fs-small:    14px;
+  --tsf-fs-eyebrow:  13px;                     /* letter-spaced label    */
+
+  /* ---------- SPACING (8pt base) ---------- */
+  --tsf-space-1: 4px;
+  --tsf-space-2: 8px;
+  --tsf-space-3: 16px;
+  --tsf-space-4: 24px;
+  --tsf-space-5: 32px;
+  --tsf-space-6: 48px;
+  --tsf-space-7: 64px;
+  --tsf-space-8: 96px;
+
+  /* ---------- RADII ---------- */
+  --tsf-radius-sm:  6px;
+  --tsf-radius-md:  12px;
+  --tsf-radius-lg:  20px;
+  --tsf-radius-pill: 999px;  /* fundraiser-camp tag, chips           */
+
+  /* ---------- ELEVATION ---------- */
+  --tsf-shadow-sm: 0 1px 3px rgba(0,0,0,.5);
+  --tsf-shadow-md: 0 8px 24px rgba(0,0,0,.45);
+  --tsf-shadow-lg: 0 24px 60px rgba(0,0,0,.55);
+  --tsf-glow-gold: 0 6px 24px rgba(216,178,74,.35); /* gold CTA glow   */
+}
+
+/* ============================================================
+   ELEMENT DEFAULTS — opt in by applying .tsf-type to a root
+   ============================================================ */
+.tsf-type {
+  font-family: var(--tsf-font-body);
+  font-size: var(--tsf-fs-body);
+  line-height: 1.55;
+  color: var(--tsf-fg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.tsf-type h1, .tsf-h1 {
+  font-family: var(--tsf-font-display);
+  font-weight: 800;
+  font-size: var(--tsf-fs-h1);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.tsf-type h2, .tsf-h2 {
+  font-family: var(--tsf-font-display);
+  font-weight: 800;
+  font-size: var(--tsf-fs-h2);
+  line-height: 1.02;
+  text-transform: uppercase;
+  margin: 0;
+}
+.tsf-type h3, .tsf-h3 {
+  font-family: var(--tsf-font-display);
+  font-weight: 700;
+  font-size: var(--tsf-fs-h3);
+  line-height: 1.1;
+  margin: 0;
+}
+.tsf-display {
+  font-family: var(--tsf-font-display);
+  font-weight: 900;
+  font-size: var(--tsf-fs-display);
+  line-height: 0.92;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.tsf-numeral {
+  font-family: var(--tsf-font-numeral);
+  font-weight: 700;
+  font-size: var(--tsf-fs-numeral);
+  line-height: 0.9;
+  font-style: italic;       /* impact numerals read italic on board */
+  margin: 0;
+}
+.tsf-eyebrow {
+  font-family: var(--tsf-font-display);
+  font-weight: 700;
+  font-size: var(--tsf-fs-eyebrow);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+.tsf-type p { margin: 0 0 1em; max-width: 62ch; text-wrap: pretty; }
+.tsf-type small, .tsf-small { font-size: var(--tsf-fs-small); color: var(--tsf-fg-2); }
+
+/* ============================================================
+   TEXT FILL HELPERS
+   ============================================================ */
+.tsf-text-gold   { color: var(--tsf-gold); }
+.tsf-text-silver { color: var(--tsf-silver); }
+.tsf-fill-gold   { background: var(--tsf-grad-gold);   -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tsf-fill-silver { background: var(--tsf-grad-silver); -webkit-background-clip: text; background-clip: text; color: transparent; }
