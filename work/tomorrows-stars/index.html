@@ -18,18 +18,37 @@
     <nav class="tsf-nav" id="tsfNav">
       <a class="nl on" href="index.html">Home</a>
       <a class="nl" href="programs.html">Programs</a>
-      <a class="nl" href="about.html">About</a>
-      <a class="nl" href="past-initiatives.html">Past Initiatives</a>
+      <div class="nl-drop">
+        <a class="nl" href="about.html">About</a>
+        <div class="nl-menu">
+          <a href="about.html#why">Our Why</a>
+          <a href="about.html#board">Board of Directors</a>
+          <a href="about.html#partners">Our Partners</a>
+          <a href="about.html#get-involved">Get Involved</a>
+        </div>
+      </div>
+      <div class="nl-drop">
+        <a class="nl" href="past-initiatives.html">Past Initiatives</a>
+        <div class="nl-menu">
+          <a href="adopt-a-school.html">Adopt-A-School</a>
+          <a href="summer-league-jr-nba.html">Summer League Jr. NBA</a>
+          <a href="court-science-classroom.html">Court Science Classroom</a>
+          <a href="on-air-classroom.html">On-Air Classroom</a>
+          <a href="sports-science-classroom.html">Sports Science Classroom</a>
+          <a href="stars-of-tomorrow-scholarships.html">Stars of Tomorrow Scholarship</a>
+        </div>
+      </div>
       <a class="nl" href="updates.html">Updates</a>
       <a class="nl" href="contact.html">Contact</a>
       <a class="btn" href="donate.html">Make a Donation</a>
     </nav>
   </div>
 </header>
-<section class="hero">
+<section class="hero hero--photo" style="background-image:url(img/upd-hero-court.jpg)">
+  <div class="hero__shade"></div>
   <div class="wrap">
     <p class="kicker rv">Tomorrow's Stars Foundation</p>
-    <h1 class="disp rv">Where education, sports &amp; <em>opportunity</em> shape tomorrow</h1>
+    <h1 class="disp rv">Where education, sports <span class="gold">&amp; opportunity</span> shape tomorrow</h1>
     <p class="sub rv rv-d1">A youth-development nonprofit delivering free programming to young people across greater Las Vegas through mentoring, technology, the arts, challenging academics, and sports.</p>
     <div class="hero__cta rv rv-d2">
       <a class="btn" href="donate.html">Donate Now</a>
@@ -46,17 +65,17 @@
 </div>
 <section class="stats">
   <div class="wrap stats__grid">
-    <div class="stat rv"><b data-count="50" data-suf="+">50+</b><span>Community Partners</span></div>
-    <div class="stat rv rv-d1"><b data-count="1100" data-suf="+">1,100+</b><span>Youth Impacted</span></div>
-    <div class="stat rv rv-d2"><b data-count="4000" data-pre="$" data-suf="+">$4K+</b><span>Scholarships Awarded</span></div>
-    <div class="stat rv rv-d3"><b data-count="6">6</b><span>Areas of Focus</span></div>
+    <div class="stat rv"><b class="n" data-count="50" data-suf="+">50+</b><span class="l">Community Partners</span></div>
+    <div class="stat rv rv-d1"><b class="n" data-count="1100" data-suf="+">1,100+</b><span class="l">Youth Impacted</span></div>
+    <div class="stat rv rv-d2"><b class="n" data-count="4000" data-pre="$" data-suf="+">$4K+</b><span class="l">Scholarships Awarded</span></div>
+    <div class="stat rv rv-d3"><b class="n" data-count="6">6</b><span class="l">Areas of Focus</span></div>
   </div>
 </section>
 
-<section class="sec" id="programs">
+<section class="sec paper" id="programs">
   <div class="wrap">
     <p class="kicker rv">2025&ndash;26 Programming</p>
-    <h2 class="disp rv">What&rsquo;s running this year</h2>
+    <h2 class="disp rv">What&rsquo;s running <span class="gold">this year</span></h2>
     <p class="lede rv">Three flagship programs running right now, each turning an area of focus into a hands-on experience for young people across Southern Nevada.</p>
     <div class="prog-grid">
       <article class="prog rv">
@@ -125,21 +144,24 @@
   <div class="wrap">
     <p class="kicker rv">Recent Work</p>
     <h2 class="disp rv">From the community</h2>
-    <p class="lede rv">Stories, recaps, and moments from across the foundation&rsquo;s work. <a href="updates.html">See all updates &rarr;</a></p>
+    <p class="lede rv">Stories, recaps, and moments from across the foundation&rsquo;s work. <a href="updates.html" style="white-space:nowrap">See all updates &rarr;</a></p>
     <div class="comm-grid">
       <article class="comm-card rv">
+        <img src="img/upd-mlk.jpg" alt="Community recognition event">
         <p class="date">December 2025 &middot; Recognition</p>
         <h3>Carole Adams Hattar Named Citizen of the Year</h3>
         <p>Recognized by the City of Las Vegas for more than 25 years of service to the community&rsquo;s young people.</p>
         <a href="carole-adams-hattar-citizen-of-the-year.html">Read more &rarr;</a>
       </article>
       <article class="comm-card rv rv-d1">
+        <img src="img/upd-hero-court.jpg" alt="Youth on the court">
         <p class="date">2026 &middot; Year In Motion</p>
         <h3>2026 So Far: A Recap of the Year in Motion</h3>
         <p>Three new flagship programs, a summer basketball camp with NBA coaches, and another year of TSF youth on the floor at NBA Summer League.</p>
         <a href="2026-so-far-recap.html">Read more &rarr;</a>
       </article>
       <article class="comm-card rv rv-d2">
+        <img src="img/upd-fashion.jpg" alt="Youth fashion showcase">
         <p class="date">July 2025 &middot; Event Recap</p>
         <h3>TSF and The Sunday Collective Highlight Youth Fashion</h3>
         <p>At halftime of Nets vs. Wizards, the Thomas &amp; Mack Center became a runway for The Sunday Collective&rsquo;s debut children&rsquo;s fashion show.</p>
@@ -155,7 +177,7 @@
     <h2 class="disp rv">50+ organizations, one mission</h2>
     <p class="lede rv">The companies, schools, and community groups powering free youth programming across Southern Nevada.</p>
     <div class="partners__cloud rv">
-      <span>NBA Summer League</span><span>City of Las Vegas</span><span>Clark County School District</span><span>Arthrex</span><span>Goode Surgical</span><span>Pinkbox Doughnuts</span><span>Public Education Foundation</span><span>Siegel Cares</span><span>4th Family Foundation</span><span>New York Life</span>
+      <span>NBA Summer League</span><span>City of Las Vegas</span><span>Clark County School District</span><span>Arthrex</span><span>Goode Surgical</span><span>Pinkbox Doughnuts</span><span>Public Education Foundation</span><span>Siegel Cares</span><span>4th Family Foundation</span><span>New York Life</span><span>Boys &amp; Girls Clubs of Southern Nevada</span><span>UNLV</span><span>YMCA of Southern Nevada</span><span>Nevada SPCA</span><span>The Sunday Collective</span><span>Codee Locs</span><span>The Gas Station Studios</span><span>Findlay Toyota</span>
     </div>
   </div>
 </section>
@@ -163,7 +185,10 @@
   <div class="wrap">
     <h2 class="disp rv">Fund a future star</h2>
     <p class="rv rv-d1">Your support ensures the continued success and growth of every TSF program and the community outreach benefiting the youth of Southern Nevada.</p>
-    <a class="btn rv rv-d2" href="donate.html">Donate Now</a>
+    <div class="rv rv-d2" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a class="btn" href="donate.html">Donate Now</a>
+      <a class="btn btn--ghost" href="past-initiatives.html">Past Initiatives</a>
+    </div>
   </div>
 </section>
 <footer class="tsf-foot" id="contact">
@@ -183,12 +208,13 @@
       </div>
       <div>
         <h4>Get Social</h4>
-        <ul><li><a href="contact.html">Instagram</a></li><li><a href="contact.html">TikTok</a></li><li><a href="contact.html">LinkedIn</a></li></ul>
+        <ul><li><a href="contact.html">Facebook</a></li><li><a href="contact.html">Twitter</a></li><li><a href="contact.html">Instagram</a></li></ul>
         <a class="btn" href="donate.html" style="margin-top:18px">Get Involved</a>
       </div>
     </div>
     <div class="tsf-foot__base">
       <span>&copy; 2026 Tomorrow's Stars Foundation. All rights reserved.</span>
+      <span>Tomorrow&rsquo;s Stars Foundation is a 501(c)(3) nonprofit &middot; EIN #82-5015549</span>
       <span>Portfolio recreation of the live site at <a href="https://tomorrowsstars.org/" target="_blank" rel="noopener">tomorrowsstars.org</a></span>
     </div>
   </div>
