@@ -1,4 +1,4 @@
-@import url("ds/colors_and_type.css");
+@import url("ds/colors_and_type.css?v=20260929d");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,600;0,700;1,600;1,700&display=swap");
 
 /* ============ TOMORROW'S STARS RECREATION — built on the TSF design system ============ */
@@ -43,7 +43,7 @@ a{color:var(--tsf-gold)}
 .btn--dark{background:var(--tsf-gold-ink);color:var(--tsf-gold)}
 
 /* Nav */
-.tsf-head{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(0,0,0,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--tsf-hairline)}
+.tsf-head{position:fixed;top:0;left:0;right:0;z-index:60;background:transparent}
 .tsf-head__in{max-width:1280px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .tsf-brand img{height:44px;width:auto}
 .tsf-nav{display:flex;gap:30px;align-items:center}
@@ -52,8 +52,18 @@ a{color:var(--tsf-gold)}
 .tsf-nav .nl:hover{color:var(--tsf-gold)}
 .tsf-nav .nl:hover::after{width:100%}
 .tsf-nav .nl.on{color:var(--tsf-gold)}
-.tsf-nav .nl.on::after{width:100%}
+.tsf-nav .nl.on::after{left:50%;top:-9px;bottom:auto;transform:translateX(-50%);width:26px;height:3px}
+.nl .chev{width:9px;height:10px;margin-left:7px;transition:transform .18s ease-out}
+.nl-drop:hover .nl .chev{transform:rotate(180deg)}
 .tsf-nav .btn{padding:12px 26px}
+.hsearch{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;flex:none}
+.hsearch:hover{border-color:var(--tsf-gold);color:var(--tsf-gold)}
+.hsearch svg{width:16px;height:16px}
+.hsearch-panel{position:absolute;top:100%;left:0;right:0;background:rgba(0,0,0,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--tsf-hairline);padding:26px 28px}
+.hsearch-panel form{max-width:720px;margin:0 auto;display:flex;gap:12px}
+.hsearch-panel input{flex:1;background:#0a0a0b;border:1px solid var(--tsf-hairline);border-radius:999px;padding:13px 22px;color:#fff;font-size:1rem}
+.hsearch-panel input:focus{outline:none;border-color:var(--tsf-gold)}
+.hsearch-panel .demo-note{max-width:720px;margin:12px auto 0;color:var(--tsf-fg-2);font-size:.85rem;text-align:center}
 .burger{display:none;background:none;border:0;cursor:pointer;padding:10px}
 .burger span{display:block;width:26px;height:2px;background:#fff;margin:6px 0;transition:transform .2s ease-out,opacity .2s}
 .bm{background:var(--tsf-surface);border:1px solid var(--tsf-hairline);border-radius:12px;overflow:hidden;transition:transform .2s ease-out,border-color .2s}
@@ -202,7 +212,7 @@ a{color:var(--tsf-gold)}
 /* Footer */
 .tsf-foot{background:#000;border-top:1px solid var(--tsf-hairline);padding:70px 0 0}
 .tsf-foot__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:50px}
-.tsf-head__in img.logo{height:44px;width:auto;display:block}
+.tsf-head__in img.logo{height:54px;width:auto;display:block}
 .tsf-foot img.logo{height:44px;width:auto;margin-bottom:18px}
 .tsf-foot p{color:var(--tsf-fg-2);font-size:.92rem;max-width:36ch}
 .tsf-foot h4{font-family:var(--tsf-font-display);font-weight:700;font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--tsf-gold);margin-bottom:18px}
