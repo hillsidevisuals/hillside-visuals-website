@@ -19,6 +19,18 @@
     els.forEach(function(el){io.observe(el);});
   }else{els.forEach(function(el){el.classList.add('on');});}
 })();
+// header search toggle
+(function(){
+  var b=document.querySelector('.hsearch'),p=document.getElementById('hsearchPanel');
+  if(!b||!p)return;
+  b.addEventListener('click',function(){
+    var open=p.hasAttribute('hidden');
+    if(open){p.removeAttribute('hidden');b.setAttribute('aria-expanded','true');var i=p.querySelector('input');if(i)i.focus();}
+    else{p.setAttribute('hidden','');b.setAttribute('aria-expanded','false');}
+  });
+  var f=document.getElementById('hsearchForm');
+  if(f)f.addEventListener('submit',function(e){e.preventDefault();});
+})();
 // animated stat counters
 (function(){
   var stats=document.querySelectorAll('.stat b[data-count]');
