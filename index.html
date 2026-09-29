@@ -1,207 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hillside Visuals — Media & Content Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home &mdash; Tomorrow's Stars Foundation</title>
+<meta name="description" content="Tomorrow's Stars Foundation: free youth programming across education, technology, athletics, medicine, arts, and engineering.">
+<link rel="icon" href="img/tsf-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
-<noscript><style>.rv{opacity:1 !important;transform:none !important}</style></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tsf-style.css?v=20260929f">
 </head>
 <body>
-<nav class="hv-nav">
-  <div class="hv-nav__inner">
-    <a class="hv-nav__brand" href="#top" aria-label="Hillside Visuals home">
-      <img src="assets/img/logo.png" alt="Hillside Visuals">
-    </a>
-    <div class="hv-nav__links">
-      <div class="hv-drop">
-      <a class="hv-nav__link" href="#work">Work</a>
-      <div class="hv-drop__menu">
-        <a href="#work">All Work</a>
-        <div class="hv-sub">
-          <a href="photos.html">Photos <span class="hv-sub__arrow">›</span></a>
-          <div class="hv-sub__menu">
-            <a href="photos.html#sports">Sports</a>
-            <a href="photos.html#portraits">Portraits</a>
-            <a href="photos.html#weddings">Weddings</a>
-            <a href="photos.html#graduations">Graduations</a>
-          </div>
+<header class="tsf-head" id="tsfHead">
+  <div class="tsf-head__in">
+    <a href="index.html" aria-label="Tomorrow's Stars Foundation home"><img class="logo" src="img/tsf-horizontal-gold.png" alt="Tomorrow's Stars Foundation"></a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" id="burger"><span></span><span></span><span></span></button>
+    <nav class="tsf-nav" id="tsfNav" aria-label="Primary">
+      <a class="nl on" href="index.html">Home</a>
+      <a class="nl" href="programs.html">Programs</a>
+      <div class="nl-drop">
+        <a class="nl" href="about.html" aria-haspopup="true">About <svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <div class="nl-menu">
+          <a href="about.html#why">Our Why</a>
+          <a href="about.html#numbers">By The Numbers</a>
+          <a href="about.html#board">Board of Directors</a>
+          <a href="about.html#partners">Our Partners</a>
+          <a href="about.html#get-involved">Get Involved</a>
         </div>
-        <div class="hv-sub">
-          <a href="videos.html">Videos <span class="hv-sub__arrow">›</span></a>
-          <div class="hv-sub__menu">
-            <a href="videos.html#dance">Dance</a>
-            <a href="videos.html#sports">Sports</a>
-            <a href="videos.html#cinematic">Cinematic</a>
-          </div>
-        </div>
-        <a href="flyers.html">Flyers</a>
-        <a href="graphics.html">Graphics</a>
-        <a href="sites.html">Sites</a>
-        <a href="promotions.html">Promotions</a>
-        <a href="events.html">Events</a>
       </div>
-    </div>
-      <a class="hv-nav__link" href="#services">Services</a>
-      <a class="hv-nav__link" href="#about">About</a>
-      <a class="hv-nav__cta" href="#book">Book</a>
-    </div>
-    <button class="hv-burger" type="button" aria-label="Menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="hv-mobilemenu">
-        <a href="#work">All Work</a>
-        <div class="hv-msub">
-          <button type="button" class="hv-msub__toggle" aria-expanded="false">Photos <span>›</span></button>
-          <div class="hv-msub__links">
-          <a href="photos.html#sports">Sports</a>
-          <a href="photos.html#portraits">Portraits</a>
-          <a href="photos.html#weddings">Weddings</a>
-          <a href="photos.html#graduations">Graduations</a>
-          </div>
+      <div class="nl-drop">
+        <a class="nl" href="past-initiatives.html" aria-haspopup="true">Past Initiatives <svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <div class="nl-menu">
+          <a href="adopt-a-school.html">Adopt-A-School</a>
+          <a href="summer-league-jr-nba.html">Summer League Jr. NBA</a>
+          <a href="court-science-classroom.html">Court Science Classroom</a>
+          <a href="on-air-classroom.html">On-Air Classroom</a>
+          <a href="sports-science-classroom.html">Sports Science Classroom</a>
+          <a href="stars-of-tomorrow-scholarships.html">Stars of Tomorrow Scholarship</a>
         </div>
-        <div class="hv-msub">
-          <button type="button" class="hv-msub__toggle" aria-expanded="false">Videos <span>›</span></button>
-          <div class="hv-msub__links">
-          <a href="videos.html#dance">Dance</a>
-          <a href="videos.html#sports">Sports</a>
-          <a href="videos.html#cinematic">Cinematic</a>
-          </div>
-        </div>
-        <a href="flyers.html">Flyers</a>
-        <a href="graphics.html">Graphics</a>
-        <a href="sites.html">Sites</a>
-        <a href="promotions.html">Promotions</a>
-        <a href="events.html">Events</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#book">Book</a>
+      </div>
+      <a class="nl" href="updates.html">Updates</a>
+      <a class="nl" href="contact.html">Contact</a>
+      <a class="btn" href="donate.html">Make a Donation</a>
+      <button class="hsearch" aria-label="Search" aria-expanded="false" id="hsearchBtn"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 14l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </nav>
+  </div>
+<div class="hsearch-panel" id="hsearchPanel" hidden>
+    <form id="hsearchForm"><input type="search" placeholder="Search programs, updates, initiatives&hellip;" aria-label="Search"><button class="btn" type="submit">Search</button></form>
+    <p class="demo-note">Demo recreation &mdash; search runs on the live site at tomorrowsstars.org.</p>
+  </div>
+</header>
+<header class="tsf-hero">
+  <div class="wrap">
+    <div class="eyebrow rv">Tomorrow&rsquo;s Stars Foundation</div>
+    <div class="rule rv" style="margin-left:auto;margin-right:auto"></div>
+    <h1 class="h-display rv">Where education, sports<br>&amp; <span class="gold-grad">opportunity</span><br>shape tomorrow</h1>
+    <p class="lead rv" style="margin-top:22px">A youth-development nonprofit delivering free programming to young people across greater Las Vegas through mentoring, technology, the arts, challenging academics, and sports.</p>
+    <div class="btn-row btn-row--center rv">
+      <a class="btn" href="donate.html">Donate Now</a>
+      <a class="btn btn--ghost" href="programs.html">See Our Programs</a>
     </div>
   </div>
-</nav>
-
-
-<!-- ============ HERO ============ -->
-<header class="hv-hero" id="top">
-  <div class="hv-hero__media"><img src="assets/img/hero.jpg" alt="Studio portrait, Hillside Visuals"></div>
-  <div class="hv-hero__scrim"></div>
-  <div class="hv-hero__content">
-    <img class="hv-hero__logo" src="assets/img/logo.png" alt="Hillside Visuals">
-    <p class="hv-hero__eyebrow">Media &middot; Content &middot; Visuals</p>
-    <h1 class="hv-display hv-hero__title">We make things<br>worth looking at</h1>
-    <p class="hv-hero__sub">Where your visions are made a reality.</p>
-    <div class="hv-hero__actions">
-      <a class="hv-btn hv-btn--light" href="#work">View the Work</a>
-      <a class="hv-btn hv-btn--ghost-light" href="#book">Book a Session</a>
-    </div>
-  </div>
-  <div class="hv-hero__meta"><span>Las Vegas, NV</span><span>Est. MMXXIII</span></div>
+  <div class="tsf-heroimg rv"><img src="img/TSF-2026-Hero-Court-Group.jpg" alt="Youth at NBA Summer League"></div>
 </header>
 
-<!-- ============ SERVICES ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Education</span><span>Technology</span><span>Athletics</span><span>Medicine</span><span>Arts</span><span>Engineering</span>
+    <span>Education</span><span>Technology</span><span>Athletics</span><span>Medicine</span><span>Arts</span><span>Engineering</span>
+    <span>Education</span><span>Technology</span><span>Athletics</span><span>Medicine</span><span>Arts</span><span>Engineering</span>
+  </div>
+</div>
+<section class="tsf-sec tsf-sec--ink">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat rv"><span class="stat__n" data-count="50" data-suffix="+">50+</span><span class="stat__l">Community Partners</span></div>
+      <div class="stat rv rv-d1"><span class="stat__n" data-count="1100" data-suffix="+">1,100+</span><span class="stat__l">Youth Impacted</span></div>
+      <div class="stat rv rv-d2"><span class="stat__n" data-count="4000" data-prefix="$" data-ksuffix="K+">$4K+</span><span class="stat__l">Scholarships Awarded</span></div>
+      <div class="stat rv rv-d3"><span class="stat__n" data-count="6">6</span><span class="stat__l">Areas of Focus</span></div>
+    </div>
+  </div>
+</section>
 
-<section class="hv-sec" id="services">
-  <div class="hv-sec__head rv">
-    <p class="hv-eyebrow">What we do</p>
-    <h2 class="hv-display hv-sec__title">Services</h2>
-    <p class="hv-sec__lead">All things visuals — shot, cut, and designed under one roof.</p>
-  </div>
-  <div class="hv-tiles">
-    <a class="hv-tile rv" href="photos.html"><img src="assets/img/hero.jpg" alt="Portraits"><span class="hv-tile__scrim"></span><span class="hv-tile__label"><span class="hv-tile__title">Portraits</span><span class="hv-tile__more">View work</span></span></a>
-    <a class="hv-tile rv" href="photos.html"><img src="assets/img/tile-headshots.jpg" alt="Professional headshots"><span class="hv-tile__scrim"></span><span class="hv-tile__label"><span class="hv-tile__title">Headshots</span><span class="hv-tile__more">View work</span></span></a>
-    <a class="hv-tile rv" href="flyers.html"><img src="assets/img/tile-flyers.jpg" alt="Flyers and graphic design"><span class="hv-tile__scrim"></span><span class="hv-tile__label"><span class="hv-tile__title">Flyers &amp; Graphics</span><span class="hv-tile__more">View work</span></span></a>
-    <a class="hv-tile rv" href="promotions.html"><img src="assets/img/tile-promotions.jpg" alt="Promotions"><span class="hv-tile__scrim"></span><span class="hv-tile__label"><span class="hv-tile__title">Promotions</span><span class="hv-tile__more">View work</span></span></a>
-    <a class="hv-tile rv" href="events.html"><img src="assets/img/tile-events.jpg" alt="Events and graduations"><span class="hv-tile__scrim"></span><span class="hv-tile__label"><span class="hv-tile__title">Events</span><span class="hv-tile__more">View work</span></span></a>
-    <a class="hv-tile rv" href="videos.html"><img src="assets/img/tile-videography.jpg" alt="Videography"><span class="hv-tile__scrim"></span><span class="hv-tile__label"><span class="hv-tile__title">Videography</span><span class="hv-tile__more">View work</span></span></a>
-    <a class="hv-tile rv" href="sites.html"><img src="assets/img/tile-websites.jpg" alt="Websites"><span class="hv-tile__scrim"></span><span class="hv-tile__label"><span class="hv-tile__title">Websites</span><span class="hv-tile__more">View work</span></span></a>
-  </div>
-</section>
-<section class="hv-sec hv-work" id="work">
-  <div class="hv-sec__head rv">
-    <p class="hv-eyebrow">Selected work</p>
-    <h2 class="hv-display hv-sec__title">The Work</h2>
-    <p class="hv-sec__lead">A selection of shoots, designs, and edits — the full galleries live on their own pages.</p>
-  </div>
-  <div class="hv-browse rv">
-  <a class="hv-textlink" href="photos.html">Photos</a>
-  <a class="hv-textlink" href="videos.html">Videos</a>
-  <a class="hv-textlink" href="flyers.html">Flyers</a>
-  <a class="hv-textlink" href="graphics.html">Graphics</a>
-</div>
-  <div class="hv-work__empty" id="workEmpty">More <span id="workEmptyCat"></span> work is on the way.</div>
-  <div class="hv-work__grid">
-<div class="hv-work__item rv" data-cat="sites" data-feat="1"><a href="work/tomorrows-stars/"><img src="assets/img/work-1.jpg" alt="Tomorrow's Stars Foundation"></a><div class="hv-work__cap"><span class="t">Tomorrow's Stars Foundation</span><span class="c">Website — click through the full recreation</span></div></div>
-<div class="hv-work__item rv" data-cat="photos" data-sub="sports" data-feat="1"><a href="https://www.instagram.com/p/Db8vyuOGs5o/" target="_blank" rel="noopener"><img src="assets/img/work-2.jpg" alt="NBA Summer League ’26"></a><div class="hv-work__cap"><span class="t">NBA Summer League ’26</span><span class="c">Photos</span></div></div>
-<div class="hv-work__item rv" data-cat="photos" data-sub="events" data-feat="1"><a href="https://www.instagram.com/p/DYLhXMTCVoE/" target="_blank" rel="noopener"><img src="assets/img/work-3.jpg" alt="Senior Sunday"></a><div class="hv-work__cap"><span class="t">Senior Sunday</span><span class="c">Graduation</span></div></div>
-<div class="hv-work__item rv" data-cat="photos" data-sub="weddings" data-feat="1"><a href="https://www.instagram.com/p/DVzZcokgQBi/" target="_blank" rel="noopener"><img src="assets/img/work-9.jpg" alt="Franco &amp; Grace — Scene 1"></a><div class="hv-work__cap"><span class="t">Franco &amp; Grace — Scene 1</span><span class="c">Wedding</span></div></div>
-<div class="hv-work__item rv" data-cat="photos" data-sub="portraits" data-feat="1"><a href="https://www.instagram.com/p/DVjj0x1Ep7T/" target="_blank" rel="noopener"><img src="assets/img/work-10.jpg" alt="Named Collective"></a><div class="hv-work__cap"><span class="t">Named Collective</span><span class="c">Photos</span></div></div>
-<div class="hv-work__item rv" data-cat="photos" data-sub="sports" data-feat="1"><a href="https://www.instagram.com/p/DTvoIjXEpSJ/" target="_blank" rel="noopener"><img src="assets/img/work-11.jpg" alt="Ante Up — Hip-Hop Semis"></a><div class="hv-work__cap"><span class="t">Ante Up — Hip-Hop Semis</span><span class="c">Dance</span></div></div>
-<div class="hv-work__item rv" data-cat="graphics" data-feat="1"><a href="https://www.instagram.com/p/DN1o3oEQiBr/" target="_blank" rel="noopener"><img src="assets/img/work-20.jpg" alt="Offering Services"></a><div class="hv-work__cap"><span class="t">Offering Services</span><span class="c">Graphics</span></div></div>
-<div class="hv-work__item rv" data-cat="videos" data-sub="dance" data-feat="1"><a href="https://www.instagram.com/reel/DTrDXwGDXt0/" target="_blank" rel="noopener"><img src="assets/img/work-27.jpg" alt="UDA Hip-Hop Nationals Champions"></a><div class="hv-work__cap"><span class="t">UDA Hip-Hop Nationals Champions</span><span class="c">Videography</span></div></div>
-<div class="hv-work__item rv" data-cat="videos" data-sub="sports" data-feat="1"><a href="https://www.instagram.com/reel/DGzD4cayWna/" target="_blank" rel="noopener"><img src="assets/img/work-30.jpg" alt="Basketball Essence"></a><div class="hv-work__cap"><span class="t">Basketball Essence</span><span class="c">Videography</span></div></div>
-<div class="hv-work__item rv" data-cat="flyers" data-feat="1"><a href="https://www.instagram.com/hillsidevisuals/" target="_blank" rel="noopener"><img src="assets/img/work-34.jpg" alt="Recruit Weekend"></a><div class="hv-work__cap"><span class="t">Recruit Weekend</span><span class="c">UNLV Rebel Girls &amp; Company</span></div></div>
-<div class="hv-work__item rv" data-cat="flyers" data-feat="1"><a href="https://www.instagram.com/hillsidevisuals/" target="_blank" rel="noopener"><img src="assets/img/work-36.jpg" alt="Youth Basketball Camp"></a><div class="hv-work__cap"><span class="t">Youth Basketball Camp</span><span class="c">Tomorrow's Stars Foundation</span></div></div>
-<div class="hv-work__item rv" data-cat="graphics" data-feat="1"><a href="https://www.instagram.com/hillsidevisuals/" target="_blank" rel="noopener"><img src="assets/img/work-41.jpg" alt="Ante Up"></a><div class="hv-work__cap"><span class="t">Ante Up</span><span class="c">UNLV Rebel Girls &amp; Company</span></div></div>
-</div>
-  <p class="hv-note rv">Full galleries for each project live on <a class="hv-textlink" href="https://www.instagram.com/hillsidevisuals" target="_blank" rel="noopener">Instagram</a> and <a class="hv-textlink" href="https://www.tiktok.com/@hillside.visuals" target="_blank" rel="noopener">TikTok</a>.</p>
-</section>
-<section class="hv-about" id="about">
-  <div class="hv-about__media rv"><img src="assets/img/tile-promotions.jpg" alt="Hillside Visuals in studio"></div>
-  <div class="hv-about__body rv">
-    <p class="hv-eyebrow">The studio</p>
-    <p class="hv-about__statement">&ldquo;We shoot the people, the moments, and the merch — and make the graphics to match.&rdquo;</p>
-    <p class="hv-about__copy">Hillside Visuals is the media studio of Bisrat Hilete — a Las Vegas photographer, videographer, and designer. From studio portraits and headshots to flyers, reels, and full websites, the work is one thing: made to be looked at.</p>
-    <div class="hv-about__sig"><img src="assets/img/logo.png" alt="Hillside Visuals signature"></div>
-  </div>
-</section>
-<section class="hv-sec hv-book" id="book">
-  <div class="hv-book__grid">
-    <div class="rv">
-      <p class="hv-eyebrow" style="color:rgba(255,255,255,.65)">Start a project</p>
-      <h2 class="hv-display hv-book__title">Book<br>a session</h2>
-      <p class="hv-book__lead">Tell us what you&rsquo;re dreaming up. We&rsquo;ll take it from there.</p>
-      <div class="hv-book__contact">
-        <a href="tel:+17028489250">702-848-9250</a>
-        <a href="mailto:hillsidevisuals@gmail.com">hillsidevisuals@gmail.com</a>
-      </div>
+<section class="tsf-sec tsf-sec--light">
+  <div class="wrap">
+    <div class="eyebrow rv">2025&ndash;26 Programming</div>
+    <div class="rule rule--sv rv"></div>
+    <h2 class="h-display rv">What&rsquo;s running this <span class="gold-grad">year</span></h2>
+    <p class="lead rv">Three flagship programs running right now, each turning an area of focus into a hands-on experience for young people across Southern Nevada.</p>
+    <div class="cards3">
+      <article class="card rv">
+        <div class="card__img"><img src="img/TSF-Next-Move-Arcade-Jam.jpg" alt="Next Move Arcade Jam"></div>
+        <div class="card__body">
+          <p class="card__tag">City of Las Vegas &middot; Codee Locs</p>
+          <h3>Next Move Arcade Jam</h3>
+          <p>Code Your Future. Youth build and play their own video games through code, then bring them to the NBA Summer League stage.</p>
+          <a class="more" href="next-move-arcade-jam.html">Learn more &rarr;</a>
+        </div>
+      </article>
+      <article class="card rv rv-d1">
+        <div class="card__img"><img src="img/TSF-Clinical-Access-Program.jpg" alt="Clinical Access Program"></div>
+        <div class="card__body">
+          <p class="card__tag">Arthrex &middot; Goode Surgical</p>
+          <h3>Clinical Access Program</h3>
+          <p>Hands-on exposure to sports medicine and surgical careers for aspiring young health professionals, run during NBA Summer League.</p>
+          <a class="more" href="clinical-access-program-2026.html">Learn more &rarr;</a>
+        </div>
+      </article>
+      <article class="card rv rv-d2">
+        <div class="card__img"><img src="img/TSF-Next-Move-Media-Academy.jpg" alt="Next Move Media Academy"></div>
+        <div class="card__body">
+          <p class="card__tag">The Gas Station Studios</p>
+          <h3>Next Move Media Academy</h3>
+          <p>Training the next generation of youth storytellers across filmmaking, video, and digital media.</p>
+          <a class="more" href="next-move-media-academy.html">Learn more &rarr;</a>
+        </div>
+      </article>
     </div>
-    <div class="rv hv-book__cta">
-      <a class="hv-btn hv-btn--light hv-btn--lg" href="https://forms.gle/vd4VXUVYYfjuVpav8" target="_blank" rel="noopener">Book Here</a>
-      <p class="hv-book__note">Fill out our quick booking form and we&rsquo;ll get back to you.</p>
-    </div>
+    <div class="btn-row rv" style="margin-top:44px"><a class="btn btn--ghost" href="programs.html">All current programs</a></div>
   </div>
 </section>
-<footer class="hv-footer">
-  <div class="hv-footer__top">
+
+<section class="tsf-sec" style="background:#000">
+  <div class="wrap split">
     <div>
-      <img class="hv-footer__mark" src="assets/img/logo.png" alt="Hillside Visuals">
-      <p class="hv-footer__tag">Where your visions are made a reality.</p>
+      <div class="eyebrow rv">Our Why</div>
+      <div class="rule rv"></div>
+      <h2 class="h-display rv">We believe in the <span class="gold-grad">power</span> of our youth</h2>
+      <p class="lead rv" style="margin-top:20px">Tomorrow&rsquo;s Stars Foundation was created to provide youth in the Las Vegas community with free programming focused on education, technology, athletics, and community service.</p>
+      <ul class="check">
+        <li class="rv"><svg viewBox="0 0 24 24" fill="url(#tsfxgold)"><defs><linearGradient id="tsfxgold" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#8C6B1F"/><stop offset="28%" stop-color="#D8B24A"/><stop offset="50%" stop-color="#F2DFA1"/><stop offset="72%" stop-color="#D8B24A"/><stop offset="100%" stop-color="#8C6B1F"/></linearGradient></defs><path d="M12 1.6l3.09 6.68L22.4 9.3l-5.35 5.2 1.27 7.35L12 18.4 5.68 21.85l1.27-7.35L1.6 9.3l7.31-1.02z"/></svg>Free programming, every pillar</li>
+        <li class="rv rv-d1"><svg viewBox="0 0 24 24" fill="url(#tsfxgold)"><path d="M12 1.6l3.09 6.68L22.4 9.3l-5.35 5.2 1.27 7.35L12 18.4 5.68 21.85l1.27-7.35L1.6 9.3l7.31-1.02z"/></svg>Mentors from media, medicine &amp; sport</li>
+        <li class="rv rv-d2"><svg viewBox="0 0 24 24" fill="url(#tsfxgold)"><path d="M12 1.6l3.09 6.68L22.4 9.3l-5.35 5.2 1.27 7.35L12 18.4 5.68 21.85l1.27-7.35L1.6 9.3l7.31-1.02z"/></svg>50+ partners across Southern Nevada</li>
+      </ul>
+      <div class="btn-row rv"><a class="btn btn--ghost" href="about.html">Read our story</a></div>
     </div>
-    <div class="hv-footer__cols">
-      <div class="hv-footer__col">
-        <p class="hv-footer__h">Studio</p>
-        <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#book">Book</a>
+    <img class="frame rv rv-d1" src="img/TSF-Coding-Student.jpg" alt="Student coding at a TSF program">
+  </div>
+</section>
+<section class="tsf-sec">
+  <div class="wrap">
+    <div class="eyebrow rv">Six Pillars</div>
+    <div class="rule rv"></div>
+    <h2 class="h-display rv">Every kind of <span class="gold-grad">star</span></h2>
+    <p class="lead rv">Free programming across six fields of opportunity, with the mentorship and access to go pro in whatever they love.</p>
+    <div class="pillars">
+      <div class="pillar rv">
+        <span class="pillar__num">01</span>
+        <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-4 10 4-10 4z"/><path d="M6 11v5c0 1.4 2.7 3 6 3s6-1.6 6-3v-5"/></svg></div><h3>Education</h3><p>In- and after-school programming, tutoring, and scholarships that turn potential into achievement.</p>
       </div>
-      <div class="hv-footer__col">
-        <p class="hv-footer__h">Contact</p>
-        <a href="tel:+17028489250">702-848-9250</a>
-        <a href="mailto:hillsidevisuals@gmail.com">hillsidevisuals@gmail.com</a>
+      <div class="pillar rv rv-d1">
+        <span class="pillar__num">02</span>
+        <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div><h3>Technology</h3><p>Coding, game design, and digital-maker labs that build tomorrow’s innovators.</p>
       </div>
-      <div class="hv-footer__col">
-        <p class="hv-footer__h">Follow</p>
-        <a href="https://www.instagram.com/hillsidevisuals" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.tiktok.com/@hillside.visuals" target="_blank" rel="noopener">TikTok</a>
+      <div class="pillar rv rv-d2">
+        <span class="pillar__num">03</span>
+        <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3 8 4-16 3 8h4"/></svg></div><h3>Athletics</h3><p>Youth camps, leagues, and elite coaching that build confidence on and off the court.</p>
+      </div>
+      <div class="pillar rv rv-d0">
+        <span class="pillar__num">04</span>
+        <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-5l-2 5L9 5l-2 7H2"/></svg></div><h3>Medicine</h3><p>Hands-on exposure to sports medicine, surgery, and the health sciences for future clinicians.</p>
+      </div>
+      <div class="pillar rv rv-d1">
+        <span class="pillar__num">05</span>
+        <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 000 18c1.7 0 2-1.3 1.2-2.2-.8-1-.5-2.3.8-2.3H17a5 5 0 005-5c0-4.4-4-8.5-10-8.5z"/></svg></div><h3>Arts</h3><p>Broadcasting, film, music, and media programs that give young creators a real stage.</p>
+      </div>
+      <div class="pillar rv rv-d2">
+        <span class="pillar__num">06</span>
+        <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></div><h3>Engineering</h3><p>Design, build, and problem-solving experiences that spark the next generation of makers.</p>
       </div>
     </div>
   </div>
-  <div class="hv-footer__bottom">
-    <span>&copy; 2026 Hillside Visuals</span>
-    <span>Las Vegas, NV</span>
+</section>
+
+<section class="tsf-sec tsf-sec--light">
+  <div class="wrap">
+    <div class="eyebrow rv">Recent Work</div>
+    <div class="rule rule--sv rv"></div>
+    <h2 class="h-display rv">From the <span class="gold-grad">community</span></h2>
+    <div class="cards3">
+      <article class="card rv">
+        <div class="card__img"><img src="img/Board-Carole-Adams-Hattar.png" alt="Carole Adams Hattar"></div>
+        <div class="card__body">
+          <p class="card__tag">Recognition</p>
+          <h3>Carole Adams Hattar Named Citizen of the Year</h3>
+          <a class="more" href="carole-adams-hattar-citizen-of-the-year.html">Read more &rarr;</a>
+        </div>
+      </article>
+      <article class="card rv rv-d1">
+        <div class="card__img"><img src="img/TSF-2026-Hero-Court-Group.jpg" alt="TSF youth at NBA Summer League"></div>
+        <div class="card__body">
+          <p class="card__tag">Year In Motion</p>
+          <h3>2026 So Far: A Recap of the Year in Motion</h3>
+          <a class="more" href="2026-so-far-recap.html">Read more &rarr;</a>
+        </div>
+      </article>
+      <article class="card rv rv-d2">
+        <div class="card__img"><img src="img/TSF-Sunday-Collective-Fashion-Show-Main-Header.jpg" alt="Sunday Collective youth fashion show"></div>
+        <div class="card__body">
+          <p class="card__tag">Event Recap</p>
+          <h3>TSF and The Sunday Collective Highlight Youth Fashion</h3>
+          <a class="more" href="tomorrows-stars-foundation-and-the-sunday-collective-highlight-youth-fashion-at-nba-summer-league.html">Read more &rarr;</a>
+        </div>
+      </article>
+    </div>
+    <div class="btn-row rv" style="margin-top:44px"><a class="btn btn--ghost" href="updates.html">All updates</a></div>
   </div>
+</section>
+<section class="tsf-sec">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow rv">Our Partners</div>
+    <h2 class="h-display rv" style="margin-bottom:8px">50+ organizations, <span class="gold-grad">one mission</span></h2>
+    <div class="partners rv">
+      <span>NBA Summer League</span>
+      <span>City of Las Vegas</span>
+      <span>Clark County School District</span>
+      <span>Arthrex</span>
+      <span>Goode Surgical</span>
+      <span>Pinkbox Doughnuts</span>
+      <span>Public Education Foundation</span>
+      <span>Siegel Cares</span>
+      <span>4th Family Foundation</span>
+      <span>New York Life</span>
+    </div>
+  </div>
+</section>
+<section class="tsf-band">
+  <div class="wrap">
+    <div class="star-mark" style="color:#1B1303"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.6l3.09 6.68L22.4 9.3l-5.35 5.2 1.27 7.35L12 18.4 5.68 21.85l1.27-7.35L1.6 9.3l7.31-1.02z"/></svg></div>
+    <h2 class="h-display rv">Fund a future star</h2>
+    <p class="lead rv">Your support ensures the continued success and growth of every TSF program and the community outreach benefiting the youth of Southern Nevada.</p>
+    <div class="btn-row btn-row--center rv">
+      <a class="btn btn--dark" href="donate.html">Donate Now</a>
+      <a class="btn btn--inkline" href="past-initiatives.html">Past Initiatives</a>
+    </div>
+  </div>
+</section>
+<footer class="tsf-foot">
+  <div class="wrap">
+    <div class="tsf-foot__grid">
+      <div class="tsf-foot__brand">
+        <img src="img/tsf-horizontal-gold.png" alt="Tomorrow's Stars Foundation" style="height:56px">
+        <p>Free youth programming across education, technology, athletics, medicine, arts, and engineering.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Recent Work</h4>
+        <ul>
+          <li><a href="2026-so-far-recap.html">2026 So Far: A Recap of the Year in Motion</a></li>
+          <li><a href="2025-community-impact-recap.html">2025 Community Impact Recap</a></li>
+          <li><a href="carole-adams-hattar-citizen-of-the-year.html">Carole Adams Hattar Named Citizen of the Year</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Social</h4>
+        <div class="socials">
+          <a href="https://www.facebook.com/TomorrowsStarsFoundation/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.6-.1-1.4-.2-2.2-.2-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.5v7h3z"/></svg></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 4h2.7l-6 6.8L21.5 20h-5.6l-4.3-5.6L6.6 20H3.9l6.4-7.3L3.5 4H9l3.9 5.1L17.8 4zm-1 14.3h1.5L8.1 5.6H6.5l10.3 12.7z"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+        <form class="foot-search" id="footSearch"><input type="search" placeholder="Search&hellip;" aria-label="Search"><button type="submit">GO</button></form>
+        <p class="demo-note">Demo recreation &mdash; search runs on the live site.</p>
+      </div>
+    </div>
+  </div>
+  <div class="tsf-foot__base">
+    <span>Copyright 2026 Tomorrow's Stars Foundation | Tomorrow's Stars Foundation is a nonprofit 501(c)(3) public charity (tax ID# 82-5015549) | All Rights Reserved |</span>
+  </div>
+  <p class="portfolio-note">Portfolio recreation by <a href="https://hillsidevisuals.github.io/hillside-visuals-website/">Hillside Visuals</a> of the live site at <a href="https://tomorrowsstars.org/" target="_blank" rel="noopener">tomorrowsstars.org</a>. Forms and donation controls are demonstrational and transmit nothing.</p>
 </footer>
-<script src="assets/site.js"></script>
+<button class="go-top" id="goTop" aria-label="Go to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="tsf.js?v=20260929f"></script>
 </body>
 </html>
